@@ -98,6 +98,14 @@ class Perro:
         print("Zzz")
 
     @classmethod
-    def perro_grande(cls,est):
+    def perro_grande(cls,est): #cls=Perro
         if est>0.79:
             return cls("",0,est)
+            #return Perro("",0,est)
+
+    @classmethod
+    def constructos_dos(cls,raz,ed):
+        if ed>0 and ed<20:
+            return cls(raz,ed,0.0)
+        else:
+            return cls(raz, 0, 0.0)
